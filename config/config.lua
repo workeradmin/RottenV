@@ -11,7 +11,7 @@ config.startItems = {
 config.startMoney = 0 
 
 -- how many vehicles can spawn, as a total.
-config.maxVehicles = 60
+config.maxVehicles = 100
 
 -- How many Food items can be spawned, per player.
 config.maxSpawnedFood = 6
