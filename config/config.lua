@@ -3,21 +3,21 @@ config = {}
 
 -- find item IDs in shared/inventory/items.lua
 config.startItems = {
-	[1]=1,
-	[2]=1, 
+	[1]=1,phone
+	[2]=1,food, drink
 }
 
 -- Start Money, don't set this too high, or the Anticheat will kick in.
-config.startMoney = 0 
+config.startMoney = 25000 
 
 -- how many vehicles can spawn, as a total.
-config.maxVehicles = 60
+config.maxVehicles = 100
 
 -- How many Food items can be spawned, per player.
-config.maxSpawnedFood = 6
+config.maxSpawnedFood = 3
 
 -- How many Weapon Items can be spawned, per player.
-config.maxSpawnedWeapons = 4
+config.maxSpawnedWeapons = 6
 
 -- Skin Types for different humanity levels.
 config.skins = {
