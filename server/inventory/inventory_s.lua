@@ -48,7 +48,7 @@ AddEventHandler("BuyItem", function(itemId,currentMoney,humanity)
 		TriggerEvent("SentryIO_Warning", "Player Inventory Data was Missing", "Player Tried Adding Legitimate Money but player didn't exist.")
 		return
 	end
-	local actualprice = math.floor(consumableItems[itemId].price*(1+calculateBonuses(humanity)/100))
+	local actualprice = math.floor(consumableItems[itemId].price*(1+calculateBonuses(humanity)/150000))
 	if currentMoney ~= inventories[source].money then
 		TriggerEvent("RottenV:CheatingNotification", source,"Money Cheating Detected","Server-Side Money was "..inventories[source].money..", Client Money was "..currentMoney)
 		TriggerClientEvent("SetCorrectedMoney", source, inventories[source].money-actualprice)
